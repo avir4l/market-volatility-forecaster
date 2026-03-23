@@ -3,16 +3,18 @@
 An advanced Deep Learning pipeline that predicts Dow Jones Industrial Average (DJIA) price trends by fusing **Financial News Sentiment (NLP)** with **Historical Price Sequences (Time-Series)**.
 
 ## 🚀 Project Overview
-Traditional trading models often ignore the "human" element of the market. This project implements a **Multimodal Neural Network** that simultaneously processes:
-1. **Semantic Context:** Analyzes the day's top 25 headlines using a fine-tuned **FinBERT** transformer.
-2. **Technical Trends:** Processes the last 10 days of Open/High/Low/Close/Volume data using a 2-layer **BiLSTM**.
+This project implements a **Multimodal Neural Network** that simultaneously processes:
+1. **Semantic Context:** Analyzes daily headlines using a fine-tuned **FinBERT** transformer.
+2. **Technical Trends:** Processes 10-day market windows using a 2-layer **BiLSTM**.
 
 ## 🧠 Technical Highlights
-- **Transformer Fine-Tuning:** Unfroze the top layers of the `ProsusAI/finbert` model to adapt specifically to the Kaggle News dataset.
-- **Differential Learning Rates:** Implemented a dual-optimizer strategy ($2 \times 10^{-5}$ for the Transformer and $1 \times 10^{-3}$ for the LSTM) to prevent catastrophic forgetting.
-- **Real-Time Inference:** Integrated the `yfinance` API to fetch live 10-day market windows for immediate trend prediction on custom headlines.
+- **Transformer Fine-Tuning:** Unfroze top layers of `ProsusAI/finbert` to adapt to the Kaggle News dataset.
+- **Differential Learning Rates:** Implemented a dual-optimizer strategy ($2 \times 10^{-5}$ for Transformer, $1 \times 10^{-3}$ for LSTM).
+- **Live Data Integration:** Uses `yfinance` to fetch real-time market data for live inference.
 
-## 📥 Installation & Setup
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/market-volatility-forecaster.git](https://github.com/YOUR_USERNAME/market-volatility-forecaster.git)
+## 📥 Setup & Execution
+1. **Model Weights:** Download `volatility_model_weights.pth` from [INSERT_YOUR_DRIVE_LINK_HERE] and place it in the root directory.
+2. **Execution:** Open the notebook in `python_notebook/` to view the training process and run the live inference cell.
+
+## 📊 Results
+The model converged from a baseline loss of **0.69** to **0.12**, successfully identifying Bearish vs. Bullish shifts.
