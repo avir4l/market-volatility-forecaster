@@ -13,7 +13,7 @@ This project implements a **Multimodal Neural Network** that simultaneously proc
 - **Live Data Integration:** Uses `yfinance` to fetch real-time market data for live inference.
 
 ## 📥 Setup & Execution
-1. **Model Weights:** Download `volatility_model_weights.pth` from [INSERT_YOUR_DRIVE_LINK_HERE] and place it in the root directory.
+1. **Model Weights:** Download `volatility_model_weights.pth` from [https://drive.google.com/file/d/1kceWVD--fVm-haTfxpQ2ZJx3500fWXA6/view?usp=sharing] and place it in the root directory.
 2. **Execution:** Open the notebook in `python_notebook/` to view the training process and run the live inference cell.
 
 ## 📊 Results
