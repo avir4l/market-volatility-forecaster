@@ -1,0 +1,15 @@
+# Model Weights (Hosted on Google Drive due to size)
+volatility_model_weights.pth
+models/
+
+# Datasets
+Combined_News_DJIA.csv
+upload_DJIA_table.csv
+market_data.csv
+
+# Python/Notebook junk
+__pycache__/
+.ipynb_checkpoints/
+.env
+venv/
+*.pyc
