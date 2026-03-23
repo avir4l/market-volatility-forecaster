@@ -1,15 +1,12 @@
-# Model Weights (Hosted on Google Drive due to size)
+# Ignore the large model weights (Hosted on Google Drive)
 volatility_model_weights.pth
 models/
 
-# Datasets
+# Ignore raw datasets to keep GitHub fast
 Combined_News_DJIA.csv
 upload_DJIA_table.csv
 market_data.csv
 
-# Python/Notebook junk
-__pycache__/
+# Notebook junk
 .ipynb_checkpoints/
-.env
-venv/
-*.pyc
+__pycache__/
